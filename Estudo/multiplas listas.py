@@ -18,4 +18,3 @@ for indice in range(0,len(equipamentos)): # desta maneira eu mostro os elementos
     print("Valor........... :", valores[indice])
     print("Sereal.......... :", series[indice])
     print("Departamento.... :", departamento[indice])
-
