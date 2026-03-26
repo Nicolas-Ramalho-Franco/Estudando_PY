@@ -20,10 +20,12 @@ match opc :
                 print("Cachorro-quente - 15 reais")
                 quantidade11 = int(input("Digite a quantidade que deseja : "))
                 final = quantidade11*15
+                print(f"Seu preço final e {final}")
             case"2":
                 print("Hamburguer - 20 reais")
                 quantidade1 = int(input("Digite a quantidade que deseja : "))
                 final = quantidade1 * 20
+                print(f"Seu preço final e {final}")
     case "2":
         print("bebida......")
         print("1.Refrigerante - 6 reais")
@@ -34,10 +36,12 @@ match opc :
                 print("Refrigerante - 6 reais")
                 quantidade21 = int(input("Digite a quantidade que deseja : "))
                 final = quantidade21 * 6
+                print(f"Seu preço final e {final}")
             case "2":
                 print("Suco natural - 10 reais")
                 quantidade2 = int(input("Digite a quantidade que deseja : "))
                 final = quantidade2 * 10
+                print(f"Seu preço final e {final}")
     case "3":
         print("Sobremesa")
         print("1.Açai - 25 reais")
@@ -48,13 +52,13 @@ match opc :
                 print("Açai - 25 reais")
                 quantidade31 = int(input("Digite a quantidade que deseja : "))
                 final = quantidade31 * 25
+                print(f"Seu preço final e {final}")
             case "2":
                 print("Sorvete - 18 reais")
                 quantidade3 = int(input("Digite a quantidade que deseja : "))
                 final = quantidade3 * 18
+                print(f"Seu preço final e {final}")
     case "4":
         print("Saindo.....")
     case _:
         print("Opção invalida........")
-
-print(f"Seu preço final e {final}")
