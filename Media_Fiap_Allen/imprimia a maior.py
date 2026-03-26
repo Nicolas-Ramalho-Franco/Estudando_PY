@@ -1,4 +1,3 @@
-
 CP1 = float(input("Digite a primeira nota da CP1: "))
 CP2 = float(input("Digite a segunda nota da CP2: "))
 CP3 = float(input("Digite a segunda nota da CP2: "))
