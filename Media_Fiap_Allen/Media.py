@@ -1,6 +1,8 @@
 ### PRIMEIRA MÉDIA: M1 = ((CP1 + CP2)/2) * 0.2 + ((SP1 + SP2)/2) * 0.2 + GS1 * 0.6
 from encodings import normalize_encoding
 
+import lista
+
 ### SEGUNDA MÉDIA: M2 = ((CP4 + CP5)/2) * 0.2 + ((SP3 + SP4)/2) * 0.2 + GS2 * 0.6
 print("""
     =====================================
@@ -23,7 +25,9 @@ while resposta == "S":
     SP1 = float(input("Digite a primeira nota da SP1: "))
     SP2 = float(input("Digite a segunda nota da SP2: "))
     GS1 = float(input("Digite a primeira nota da GS1: "))
-
+    cpsm1 = [CP1, CP2, CP3]
+    maiorm1 = sorted(cpsm1, reverse=True)[:2] ##isso funciona para pegar os dois maiores e localizar
+    totalm1 = sum(maiorm1) ## esses sum e para somar o valor
     print("""
     ====================================
     Notas do segundo semestre
@@ -36,20 +40,13 @@ while resposta == "S":
     SP1M2 = float(input("Digite a primeira nota da SP1 do segundo Semestre: "))
     SP2M2 = float(input("Digite a segunda nota da SP2 do segundo Semestre: "))
     GS2 = float(input("Digite a primeira nota da GS2 do segundo Semestre: "))
+    cpsm2 = [CP1M2, CP2M2, CP3M2]
+    maiorm2 = sorted(cpsm2, reverse=True)[:2]
+    totalm2 = sum(maiorm2)
 
-    if CP1 <= CP2 and CP1<=CP3:
-        CP1 = CP3
-    elif CP2 <= CP1 and CP2 <= CP3:
-        CP2=CP3
+    M1 = (((totalm1)/2) * 0.2 + ((SP1 + SP2)/2) * 0.2 + GS1 * 0.6)*0.4
 
-    if CP1M2 <= CP2M2 and CP1M2<=CP3M2:
-        CP1M2 = CP3M2
-    elif CP2M2 <= CP1M2 and CP2M2 <= CP3M2:
-        CP2M2=CP3M2
-
-    M1 = (((CP1 + CP2)/2) * 0.2 + ((SP1 + SP2)/2) * 0.2 + GS1 * 0.6)*0.4
-
-    M2 = (((CP1M2 + CP2M2)/2) * 0.2 + ((SP1M2 + SP2M2)/2) * 0.2 + GS2 * 0.6)*0.6
+    M2 = (((totalm2)/2) * 0.2 + ((SP1M2 + SP2M2)/2) * 0.2 + GS2 * 0.6)*0.6
 
     media_do_ano = M1 + M2
 
