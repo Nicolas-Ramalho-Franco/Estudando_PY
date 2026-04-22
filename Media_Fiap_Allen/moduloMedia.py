@@ -1,8 +1,14 @@
 def captacaoDeDados(nota):
     print("""
+<<<<<<< HEAD
             =====================================
             bem vindo ao Calculador de nota 3000
             =====================================
+=======
+        =====================================
+        bem vindo ao Calculador de nota 3000
+        =====================================
+>>>>>>> e70f7ae921729a635c10b3b17d3d7123cf641a34
         """)
     resposta = "S"
 
