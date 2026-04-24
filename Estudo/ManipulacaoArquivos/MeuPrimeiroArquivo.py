@@ -1,2 +1,4 @@
-with open("primeiroarquivo.txt", "a") as arquivo:
-    arquivo.write("\n Rei leao")
+with open("primeiroarquivo.txt", "r") as arquivo:
+    conteudo = arquivo.readline()
+    for linha in arquivo.readline():
+        print(conteudo)
