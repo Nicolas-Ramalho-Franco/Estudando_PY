@@ -5,3 +5,4 @@ hostname = socket.gethostname()
 ip = socket.gethostbyname(hostname)
 
 print(f"Seu IP local é: {ip}")
+print(hostname)

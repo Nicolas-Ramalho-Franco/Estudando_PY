@@ -21,7 +21,6 @@ while nota1 <=-1 or nota2 <=-1 and nota1 >11 or nota2>11:
     for i in range (3):
         notaf1 = float(input("Gigite a sua nota1"))
         notaf2 = float(input("Gigite a sua nota1"))
- @
         media = (notaf1 +notaf2)/30
 print(media)
 
