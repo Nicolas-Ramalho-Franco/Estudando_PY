@@ -13,4 +13,5 @@ for elementes in notas:
     print("Sua segunda e ", elementes[1])
     print("Sua terceira e ", elementes[2])
     print("Sua quarta e ", elementes[3])
-    print("sua nota e essa aqui",elementes[0]+elementes[1]+elementes[2]+elementes[3])
+    
+    print("sua nota e essa aqui",sum(notas))
